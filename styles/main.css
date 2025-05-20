@@ -99,6 +99,139 @@ nav a:hover {
     color: #007bff;
 }
 
+/* Projects Page Styles */
+.project {
+    margin-bottom: 30px;
+}
+
+.project h3 {
+    margin-bottom: 10px;
+}
+
+.project-meta {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    margin-bottom: 15px;
+}
+
+.tech-stack {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.project-gallery {
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    height: auto;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 20px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+.carousel-button:hover {
+    background: rgba(0, 0, 0, 0.7);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
+}
+
+.carousel-dot.active {
+    background: #666;
+}
+
+/* Resources Page Styles */
+.resource-category {
+    margin-bottom: 30px;
+}
+
+.resource-category h3 {
+    margin-bottom: 15px;
+}
+
+.resource-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.resource-list li {
+    margin-bottom: 15px;
+}
+
+.resource-list a {
+    text-decoration: none;
+    color: #333;
+}
+
+.resource-list a:hover {
+    text-decoration: underline;
+}
+
+.resource-description {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
 /* Responsive Design */
 @media (max-width: 600px) {
     body {
@@ -114,7 +247,7 @@ nav a:hover {
     }
 }
 
-.cover{
+.cover {
     width: 200px;
     height: 400px;
     overflow: hidden;
