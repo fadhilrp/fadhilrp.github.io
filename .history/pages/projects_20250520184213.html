@@ -42,69 +42,16 @@
                 color: #666;
             }
             .project-gallery {
-                position: relative;
-                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 15px;
                 margin-top: 15px;
-                overflow: hidden;
             }
-            .carousel-container {
-                display: flex;
-                transition: transform 0.5s ease-in-out;
-            }
-            .carousel-slide {
-                min-width: 100%;
-                height: auto;
-            }
-            .carousel-slide img {
+            .project-gallery img {
                 width: 100%;
                 height: auto;
                 border-radius: 8px;
                 box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            }
-            .carousel-button {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                background: rgba(0, 0, 0, 0.5);
-                color: white;
-                border: none;
-                padding: 12px 16px;
-                cursor: pointer;
-                border-radius: 50%;
-                font-size: 20px;
-                z-index: 2;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 40px;
-                height: 40px;
-                transition: all 0.3s ease;
-            }
-            .carousel-button:hover {
-                background: rgba(0, 0, 0, 0.7);
-                transform: translateY(-50%) scale(1.1);
-            }
-            .carousel-prev {
-                left: 10px;
-            }
-            .carousel-next {
-                right: 10px;
-            }
-            .carousel-dots {
-                display: flex;
-                justify-content: center;
-                gap: 8px;
-                margin-top: 10px;
-            }
-            .carousel-dot {
-                width: 10px;
-                height: 10px;
-                border-radius: 50%;
-                background: #ccc;
-                cursor: pointer;
-            }
-            .carousel-dot.active {
-                background: #666;
             }
         </style>
     </head>
@@ -137,19 +84,6 @@
                 </div>
                 <div class="tech-stack">
                     <strong>Technologies:</strong> Kotlin, Android SDK, Firebase Firestore, Room Database, DAO Pattern, Universal Prayer Times API
-                </div>
-                <div class="project-gallery">
-                    <button class="carousel-button carousel-prev" aria-label="Previous slide">&#10094;</button>
-                    <button class="carousel-button carousel-next" aria-label="Next slide">&#10095;</button>
-                    <div class="carousel-container">
-                        <div class="carousel-slide">
-                            <img src="../img/Screenshot from 2025-05-20 18-50-35.png" alt="RAG Pipeline Screenshot 1">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="../img/Screenshot from 2025-05-20 18-51-01.png" alt="RAG Pipeline Screenshot 2">
-                        </div>
-                    </div>
-                    <div class="carousel-dots"></div>
                 </div>
             </div>
 
@@ -193,38 +127,17 @@
                     Developed an advanced Retrieval Augmented Generation (RAG) Pipeline utilizing state-of-the-art Large Language Models to enhance knowledge transfer efficiency in KMS Chatbot. Implemented using Python and containerized with Docker for scalability.
                 </div>
                 <div class="tech-stack">
-                    <strong>Technologies:</strong> Python, Docker, Langchain, LocalAI, llama.cpp, Huggingface TGI-Gaudi, Milvus, PostgreSQL, shadcn/ui
+                    <strong>Technologies:</strong> Python, Docker, Langchain, LocalAI, llama.cpp, Huggingface TGI-Gaudi, Milvus, PostgreSQL
                 </div>
                 <div class="project-gallery">
-                    <button class="carousel-button carousel-prev" aria-label="Previous slide">&#10094;</button>
-                    <button class="carousel-button carousel-next" aria-label="Next slide">&#10095;</button>
-                    <div class="carousel-container">
-                        <div class="carousel-slide">
-                            <img src="../img/Screenshot from 2025-05-20 18-38-09.png" alt="RAG Pipeline Screenshot 1">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="../img/Screenshot from 2025-05-20 18-38-13.png" alt="RAG Pipeline Screenshot 2">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="../img/Screenshot from 2025-05-20 18-38-23.png" alt="RAG Pipeline Screenshot 3">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="../img/Screenshot from 2025-05-20 18-38-30.png" alt="RAG Pipeline Screenshot 4">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="../img/Screenshot from 2025-05-20 18-38-37.png" alt="RAG Pipeline Screenshot 5">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="../img/Screenshot from 2025-05-20 18-38-46.png" alt="RAG Pipeline Screenshot 6">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="../img/Screenshot from 2025-05-20 18-38-55.png" alt="RAG Pipeline Screenshot 7">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="../img/Screenshot from 2025-05-20 18-39-18.png" alt="RAG Pipeline Screenshot 8">
-                        </div>
-                    </div>
-                    <div class="carousel-dots"></div>
+                    <img src="../img/Screenshot from 2025-05-20 18-38-09.png" alt="RAG Pipeline Screenshot 1">
+                    <img src="../img/Screenshot from 2025-05-20 18-38-13.png" alt="RAG Pipeline Screenshot 2">
+                    <img src="../img/Screenshot from 2025-05-20 18-38-23.png" alt="RAG Pipeline Screenshot 3">
+                    <img src="../img/Screenshot from 2025-05-20 18-38-30.png" alt="RAG Pipeline Screenshot 4">
+                    <img src="../img/Screenshot from 2025-05-20 18-38-37.png" alt="RAG Pipeline Screenshot 5">
+                    <img src="../img/Screenshot from 2025-05-20 18-38-46.png" alt="RAG Pipeline Screenshot 6">
+                    <img src="../img/Screenshot from 2025-05-20 18-38-55.png" alt="RAG Pipeline Screenshot 7">
+                    <img src="../img/Screenshot from 2025-05-20 18-39-18.png" alt="RAG Pipeline Screenshot 8">
                 </div>
             </div>
 
@@ -250,59 +163,5 @@
                 </div>
             </div>
         </div>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const carousels = document.querySelectorAll('.project-gallery');
-                
-                carousels.forEach(carousel => {
-                    const container = carousel.querySelector('.carousel-container');
-                    const slides = carousel.querySelectorAll('.carousel-slide');
-                    const prevButton = carousel.querySelector('.carousel-prev');
-                    const nextButton = carousel.querySelector('.carousel-next');
-                    const dotsContainer = carousel.querySelector('.carousel-dots');
-                    
-                    let currentSlide = 0;
-                    
-                    // Create dots
-                    slides.forEach((_, index) => {
-                        const dot = document.createElement('div');
-                        dot.classList.add('carousel-dot');
-                        if (index === 0) dot.classList.add('active');
-                        dot.addEventListener('click', () => goToSlide(index));
-                        dotsContainer.appendChild(dot);
-                    });
-                    
-                    const dots = dotsContainer.querySelectorAll('.carousel-dot');
-                    
-                    function updateDots() {
-                        dots.forEach((dot, index) => {
-                            dot.classList.toggle('active', index === currentSlide);
-                        });
-                    }
-                    
-                    function goToSlide(index) {
-                        currentSlide = index;
-                        container.style.transform = `translateX(-${currentSlide * 100}%)`;
-                        updateDots();
-                    }
-                    
-                    prevButton.addEventListener('click', () => {
-                        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-                        goToSlide(currentSlide);
-                    });
-                    
-                    nextButton.addEventListener('click', () => {
-                        currentSlide = (currentSlide + 1) % slides.length;
-                        goToSlide(currentSlide);
-                    });
-                    
-                    // Auto-advance slides every 5 seconds
-                    setInterval(() => {
-                        currentSlide = (currentSlide + 1) % slides.length;
-                        goToSlide(currentSlide);
-                    }, 5000);
-                });
-            });
-        </script>
     </body>
 </html>
